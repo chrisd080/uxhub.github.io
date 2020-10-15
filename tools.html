@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--Stylesheet-->
+	<link rel="stylesheet" href="css/resources.css">
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/filter.css">
+	<!--JS-->
+	<script src="js/javascript.js"></script>
+		
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+<!----------Font ------->
+
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+		
+<!------x----Font ----x--->
+
+	<title>UX hub</title>
+</head>
+<body>
+
+ <!----------NAV BAR ------->
+ <nav>
+ <!---------burger ------->
+ <div class="burger">
+	<div class="line1"></div>
+	<div class="line2"></div>
+	<div class="line3"></div>
+	</div>
+
+<!---------burger ------->
+
+<!--------------NAV------->
+		
+<header class='header'>				<!------------------Header section-------------------------------->
+	<div class="logo">
+		<li><a href="index.html"><h1>UX</h1><h2>HUB</h2></a></li>
+	</div>
+	<div class="links">
+<input class="menu-btn" type="checkbox" id="menu-btn" />
+<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+	<li><a href="articles.html">Articles</a></li>
+	<li><a href="videos.html">Videos</a></li>
+	<li><a href="tools.html">Tools & Resources</a></li>
+	<li><a href="submit.html">Submit content</a></li>
+  </ul>
+</div>
+</header>									<!---------X-------Header section----------------X-------------->
+
+</nav>
+
+
+<!-----X-----NAV BAR ---X---->	
+
+
+
+											<!----------------Optimal-------------------->
+	<section class="article-grid">
+		<div class="card"> <h3>Filter Content</h3></div>
+
+				        <!--Start of filter system code-->
+						<div class="dropdown">
+							<!--Filter Content button-->
+						   <button class="filterDropBtn" onclick="filterBtn()"><p>Filter Content</p>
+							   <!--Dropdown arrow-->
+							  <img class="arrow_img" src="images/drop_down_arrow.svg"  alt="dropdown arrow">
+						  </button>
+						  
+				 <!--Main container holding tags-->
+				 <div id="filter">
+					<button id="abTest" class="button" onclick="filterSelection(this.id)">A/B Testing</button>
+					<button id="wireframing" class="button button2" onclick="filterSelection(this.id)">Wireframe</button>
+					<button id="userFlow" class="button button3" onclick="filterSelection(this.id)">User Flow</button>
+					<button id="prototyping" class="button button4" onclick="filterSelection(this.id)">Prototyping</button>
+					<button id="journeyMap" class="button button5" onclick="filterSelection(this.id)">Journey Map</button>
+					<button id="userTesting" class="button button6" onclick="filterSelection(this.id)">User Testing</button>
+					<button id="userResearch" class="button button7" onclick="filterSelection(this.id)">User Research</button>
+					</a><button id="pattern" class="button button8" onclick="filterSelection(this.id)">Browsing Pattern</button>
+					<button id="usability" class="button button9" onclick="filterSelection(this.id)">Usability Test</button>
+					<button id="collab" class="button button10" onclick="filterSelection(this.id)">Collaboration</button>
+				</div>
+			</div>
+
+		<div class="card card-tall card-wide"> <p id="p6"><strong>Tools & Resources</strong></p>
+			 <p id="p1" >Resource page regarding User Experience design</p></div>
+		<div class="card card-tall-large card-wide-large"> <p class="p-heading"><strong>Optimal Workshop</strong></p> 
+			<a href="https://www.optimalworkshop.com/" target="_blank">
+				<img src="images/optimal-workshop.jpg" width="450px" height="280px"></a>
+
+			<p class="p2 space"> Understand what matters most with our user research platform - transform insights into action, and make decisions with confidence.</p>	
+				<div class="button-1">
+					<a href="https://www.optimalworkshop.com/" target="_blank"> <h3>Read More</h3> </a>
+				</div>	
+			</div>
+											<!---------X------Optimal-------------X------>
+
+											<!----------------Miro----------------------->
+
+		<div class="card card-wide card-tall-large"> <p class="p-heading"><strong>Miro</strong></p>
+			<a href="https://www.miro.com" target="_blank">
+				<img src="images/miro.jpg" width="200px" height="200px"> 
+			</a>	
+			<p class="p2"> Miro is a collaborative online whiteboard platform designed for remote and distributed teams. <br> <br> Build an develop ideas with distributed teams as if you were in the same room, anywhere, anytime. </p>
+				<div class="button-2">
+					<a href="https://www.miro.com" target="_blank"> <h3>Read More</h3> </a>
+				</div>	
+		</div>
+											<!-----X----------Miro-----------X----------->
+
+											<!----------------Figma----------------------->
+
+		<div class="card card-tall-figma card-wide-figma"> <p class="p-heading"><strong>Figma - Popular Wireframing</strong></p>
+			<a href="https://www.figma.com" target="_blank">
+				<img src="images/figma.jpg" width="200px" height="200px"> 
+			</a>	
+			<p class="p2"> Figma is the only platform that brings together powerful design features you already love and a more efficient workflow to boot. </p>
+				<div id="button-4">
+					<a href="https://www.figma.com" target="_blank"> <h3>Read More</h3> </a>
+				</div>		
+		</div>		
+											<!--------X-------Figma------------X---------->
+
+											<!----------------Trello----------------------->
+
+		<div class="card card-tall-figma card-wide-phone"> <p class="p-heading"><strong>Trello</strong></p>
+			<a href="https://www.trello.com" target="_blank">
+				<img src="images/trello.jpg" width="220px" height="200px"> 
+			</a>	
+			<p class="p3"> Trello's boards, lists, and cards enable teams to organize and prioritze projects in a fun, flexible, and rewarding way.</p>
+				<div id="button-3">
+					<a href="https://www.trello.com" target="_blank"> <h3>Read More</h3> </a>
+				</div>
+		</div>
+											<!---------X------Trello-----------X----------->
+
+											<!----------------Flowmapp----------------------->
+
+
+		<div class="card card-wide card-tall-figma"> <p class="p-heading"><strong>FlowMapp - Full stack UX platform</strong></p>
+			<a href="https://www.flowmapp.com/" target="_blank">
+				<img src="images/flowmapp.jpg" width="200px" height="200px"> 
+			</a>	
+			<p id="p2"> Design exceptional UX for beautiful products, websites, and apps with the online collaborative tools. <br> <br> Create Sitemaps, User Flow Diagrams and more! </p>
+				<div class="button-2">
+					<a href="https://www.flowmapp.com/" target="_blank"> <h3>Read More</h3> </a>
+				</div>	
+		</div>
+	</section>								<!-------X--------Flowmapp------------X---------->
+
+	<footer><h2>© UXHub 2020 IXXN221 Web Design. Made by Cody, Shiv, Issy, Hannah & Christian.</h2></footer>
+
+
+
+	

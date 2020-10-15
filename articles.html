@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--Stylesheet-->
+	<link rel="stylesheet" href="css/articles.css">
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/filter.css">
+	<!--JS-->
+	<script src="js/javascript.js"></script>
+		
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+<!----------Font ------->
+
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		
+<!------x----Font ----x--->
+
+	<title>UX hub</title>
+</head>
+<body>
+
+ <!----------NAV BAR ------->
+ <nav>
+ <!---------burger ------->
+ <div class="burger">
+	<div class="line1"></div>
+	<div class="line2"></div>
+	<div class="line3"></div>
+	</div>
+
+<!---------burger ------->
+
+<!--------------NAV------->
+		
+<header class='header'>
+	<div class="logo">
+		<li><a href="index.html"><h1>UX</h1><h2>HUB</h2></a></li>
+	</div>
+	<div class="links">
+<input class="menu-btn" type="checkbox" id="menu-btn" />
+<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+	<li><a href="articles.html">Articles</a></li>
+	<li><a href="videos.html">Videos</a></li>
+	<li><a href="tools.html">Tools & Resources</a></li>
+	<li><a href="submit.html">Submit content</a></li>
+  </ul>
+</div>
+</header>
+
+</nav>
+
+<!------X-------NAV----X-->
+
+<!--------------------------Main article grid----------------------------------------->
+
+	<section class="article-grid">
+		<div class="card"> <h3>Filter Content</h3>
+		</div>
+
+		        <!--Start of filter system code-->
+				<div class="dropdown">
+					<!--Filter Content button-->
+				   <button class="filterDropBtn" onclick="filterBtn()"><p>Filter Content</p>
+					   <!--Dropdown arrow-->
+					  <img class="arrow_img" src="images/drop_down_arrow.svg"  alt="dropdown arrow">
+				  </button>
+				  
+		 <!--Main container holding tags-->
+		 <div id="filter">
+            <a href="ab-test.html"><button id="abTest" class="button" onclick="filterSelection(this.id)">A/B Testing</button></a>
+            <a href="noresult.html"> <button id="wireframing" class="button button2" onclick="filterSelection(this.id)">Wireframe</button></a>
+            <a href="noresult.html"><button id="userFlow" class="button button3" onclick="filterSelection(this.id)">User Flow</button></a>
+            <a href="noresult.html"><button id="prototyping" class="button button4" onclick="filterSelection(this.id)">Prototyping</button></a>
+            <a href="noresult.html"><button id="journeyMap" class="button button5" onclick="filterSelection(this.id)">Journey Map</button></a>
+            <a href="noresult.html"><button id="userTesting" class="button button6" onclick="filterSelection(this.id)">User Testing</button></a>
+            <a href="noresult.html"><button id="userResearch" class="button button7" onclick="filterSelection(this.id)">User Research</button></a>
+            <a href="noresult.html"><button id="pattern" class="button button8" onclick="filterSelection(this.id)">Browsing Pattern</button></a>
+            <a href="noresult.html"><button id="usability" class="button button9" onclick="filterSelection(this.id)">Usability Test</button></a>
+            <a href="noresult.html"><button id="collab" class="button button10" onclick="filterSelection(this.id)">Collaboration</button></a>
+        </div>
+	</div>
+
+
+		<div class="card card-tall card-wide"> <p id="p6"><strong>Articles</strong></p>
+			<a href="https://neilpatel.com/blog/ab-testing-introduction/" target="_blank">
+				<img src="images/article-main.jpg" width="730px" height="410px"> 
+			</a>
+			<p id="p1"> A curated selection of articles, blog posts & case studies, covering User Experience Design concepts and practices.</p>
+			<a href="https://neilpatel.com/blog/ab-testing-introduction/" target="_blank">
+			<p id="p4"> <strong>A Beginner's Guide To AB Testing: An Introduction </strong></a>
+			<p id="p5"> A/B testing is a fantastic method for figuring out the best online promotional and marketing strategies for your business. It can be used to test everything from website copy to sales emails to search ads.</p>	
+			<div class="button-1">
+				<a href="https://neilpatel.com/blog/ab-testing-introduction/" target="_blank"> <h3>Read More</h3> </a>
+			</div>	
+		</div>
+
+
+		<div class="card card-wide-2 card-tall-2"> <p id="YML"><strong>You might like:</strong></p>
+				<div class="article-images">
+					<a href="https://www.creativebloq.com/wireframes/how-design-low-fi-wireframe-91516934" target="_blank">
+						<img src="images/article-1.jpg" width="470px" height="270px"> </a>
+				</div>
+			<a href="https://www.creativebloq.com/wireframes/how-design-low-fi-wireframe-91516934" target="_blank">
+			<p class="p2"> <strong> How to design a low-fi wireframe </strong></p> </a>
+			<p class="website-name">Creative Bloq</p> 			
+		</div>
+		<div class="card card-wide-2 card-tall-2"> 
+			<a href="https://uxdesign.cc/when-to-use-user-flows-guide-8b26ca9aa36a" target="_blank">
+				<div class="article-images">
+					<img src="images/article-2.jpg" width="470px" height="270px"> 
+				</div>	
+			</a>
+			<a href="https://uxdesign.cc/when-to-use-user-flows-guide-8b26ca9aa36a" target="_blank">	
+			<p class="p2"> <strong> User flow is the new wireframe </strong> </p> </a>
+			<p class="website-name"> UX Collective</p> 			
+		</div>		
+		<div class="card card-wide-3 card-tall-2"> 
+			<a href="https://www.nngroup.com/articles/journey-mapping-101/" target="_blank">
+				<div class="article-images">
+					<img src="images/article-3.jpg" width="470px" height="270px"> 
+				</div>	
+			</a>
+			<a href="https://www.nngroup.com/articles/journey-mapping-101/" target="_blank">	
+			<p class="p2"> <strong> Journey Mapping 101 </strong> </p> </a>
+			<p class="website-name"> Nielsen Norman Group</p>	
+		</div>
+
+		
+	</section>
+	<footer><h2>© UXHub 2020 IXXN221 Web Design. Made by Cody, Shiv, Issy, Hannah & Christian.</h2></footer>
+
+<!----------X---------------Main article grid------------------X---------------------->
+	

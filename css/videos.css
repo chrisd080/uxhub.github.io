@@ -1,0 +1,404 @@
+.card {
+	position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fdfdfd;
+    font-size: 1.4rem;
+    color: #fff;
+    box-shadow: rgba(3,8,20,0.1) 0px 0.15rem 0.5 rem, rgba(2,8,20,0.1) 0px 0.075rem 0.0175rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    transition: all 500ms;
+	overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.article-grid {
+	display: grid;
+	gap: 2rem;
+	padding-top: 15vh;
+	padding-left: 3vw;
+	padding-right: 3vw;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-auto-rows: 50px;
+	padding-bottom: 5vh;
+}
+
+a {
+	text-decoration: none;
+}
+
+.card-tall {
+	grid-row: span 12 / auto;
+}
+	
+.card-wide {
+	grid-column: span 3 / auto;
+}
+
+.card-wide-2 {
+	grid-column: span 2 / auto;
+}
+
+.card-tall-2 {
+	grid-row: span 6 / auto;
+}
+
+.card-wide-3 {
+	grid-column: span 2 / 7;
+}
+
+.article-images {
+	position: absolute;
+	top: -10%;
+	left: -4%;
+}
+
+.card img {
+	padding-bottom: 5vh;
+	padding-left: 2.6vw;
+	margin-top: 12vh;
+}
+
+
+
+.card-tall-figma {
+	grid-row: span 5 / auto;
+}
+
+#p1 {
+	font-size: 1.4rem;
+	position: absolute;
+	padding-left: 2.5vw;
+	text-align: left;
+	color: #000;
+	z-index: 1;
+	margin-top: 7vh;
+	width: 90%;
+}
+
+iframe{
+	position: absolute;
+	top:15%;
+	left:5%;
+}
+
+.p2 {
+	font-family: 'IBM Plex Sans', sans-serif;
+	position: absolute;
+	text-align: left;
+	color: 000;
+	z-index: 1;
+	left: 0.7%;
+	top: 74%;
+	font-size: 1.6rem;
+}
+
+.p2:hover {
+	text-decoration: underline;	
+}
+
+#p4:hover {
+	text-decoration: underline;	
+}
+
+.website-name {
+	position: absolute;
+	top: 82%;
+	left: 0.9%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.4rem;
+}
+
+
+.button-1 {
+	position: absolute;
+	background-color: #878787;
+	width: 10vw;
+	height: 5vh;
+	left: 5.5%;
+	top: 88%;
+	border-radius: 15px;
+
+}
+
+.button-2 {
+	position: absolute;
+	background-color: #878787;
+	width: 10vw;
+	height: 5vh;
+	left: 4%;
+	top: 80%;
+	border-radius: 15px;
+
+}
+
+
+#button-3 {
+	position: absolute;
+	background-color: #878787;
+	width: 10vw;
+	height: 5vh;
+	left: 8%;
+	top: 80%;
+	border-radius: 15px;
+}
+
+#button-4 {
+	position: absolute;
+	background-color: #878787;
+	width: 10vw;
+	height: 5vh;
+	left: 4%;
+	top: 80%;
+	border-radius: 15px;
+
+}
+
+.button-1 h3{
+	color: #fff;
+} 
+
+.button-2 h3 {
+	color: #fff;
+}
+
+#button-3 h3{
+	color: #fff;
+}
+
+#button-4 h3{
+	color: #fff;
+}
+
+.p3 {
+	display: none;
+}
+
+
+.text {
+	position: relative;
+}
+
+#p4 {
+	position: absolute;
+	font-family: 'IBM Plex Sans', sans-serif;
+	color: #000;
+	font-size: 1.6rem;
+	top: 60%;
+	padding-left: 2.5vw;
+}
+
+#p5 {
+	position: absolute;
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+	top: 65%;
+	padding-left: 2.5vw;
+	width: 80%;
+	font-size: 1.15rem;
+}
+
+#p6 {
+	padding-left: 2.6vw;
+	font-family: 'IBM Plex Sans', sans-serif;
+	color: #000;
+	font-size: 2.4rem;
+}
+
+	
+p {
+	font-family:'IBM Plex Sans', sans-serif;
+	padding-left: 1.2vw;
+	padding-top: 0.8vh;
+	color: #000;
+}
+
+h3 {
+	color: #000;
+	padding-left: 1.6vw;
+	padding-top: 0.6vh;
+	font-family:'IBM Plex Sans', sans-serif;
+}
+
+h4 {
+	color: #000;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 2.5rem;
+	padding-left: 2.5vw;
+}
+
+#YML {
+	font-family: 'IBM Plex Sans', sans-serif;
+	color: #000;
+	font-size: 1.5rem;
+}
+
+
+@media screen and (max-width: 600px){
+	.card-tall {
+		grid-row: span 10 / auto;
+	}
+	
+	.card-wide {
+		grid-column: span 7 / auto;
+	}
+
+	.card-wide-2 {
+		grid-column: span 7 / auto;
+	}
+
+	.card-wide-3 {
+		grid-column: span 7 / auto;
+	}
+
+	.card-tall-2 {
+		grid-row: span 5 / auto;
+	}
+	
+	.card-wide-large {
+		grid-column: span 2 / auto;
+	}
+	
+	.card-tall-large {
+		grid-row: span 9 / auto;
+	}
+
+	.article-images {
+		position: absolute;
+		top: -6%;
+	}
+
+	#p1 {
+		left: 1%;
+		font-size: 1rem;
+		padding-left: 1.7%;
+		top: -2%;
+		width: 80%;
+	}
+
+	.button-1 {
+		width: 35vw;
+		left: 2%;
+		padding-left: 1.5%;
+		top: 85%;
+	}
+
+	.button-1 h3 {
+		font-size: 1.3rem;
+		text-align: center;
+		margin-right: 20px;
+	}
+
+	.card img {
+		position: absolute;
+		width: 410px;
+		top: 4%;
+		height: 350px;
+		padding-left: 20px;
+	}
+
+	.p2 {
+		left: 3%;
+		padding-left: 1.5%;
+		top: 90%;
+		width: 80%;
+		font-size: 1.3rem;
+	}
+
+	.website-name {
+		font-size: 1.3rem;
+		font-family: 'Open Sans', sans-serif;
+		top: -20px;
+		display: none;
+	}
+
+	.button-2 {
+		width: 35vw;
+		left: 2%;
+		padding-left: 1.5%;
+		top: 92%;
+	}
+
+	.button-2 h3 {
+		font-size: 1.3rem;
+		text-align: center;
+		margin-right: 20px;
+	}
+
+	#button-3 {
+		width: 35vw;
+		left: 2%;
+		padding-left: 1.5%;
+		top: 82%;
+	}
+
+	#button-3 h3 {
+		font-size: 1.3rem;
+		text-align: center;
+		margin-right: 20px;
+	}
+
+	#button-4 {
+		width: 35vw;
+		left: 2%;
+		padding-left: 1.5%;
+		top: 81%;
+	}
+
+	#button-4 h3 {
+		font-size: 1.3rem;
+		text-align: center;
+		margin-right: 20px;
+	}
+
+	.p3 {
+		position: absolute;
+		display: block;
+		left: 1%;
+		padding-left: 1.5%;
+		top: 61%;
+		width: 80%;
+	}
+
+	#p6 {
+		color: #000;
+		font-family: 'IBM Plex Sans', sans-serif;
+		font-size: 1.25rem;
+		padding-left: 2.5vw;
+	}
+
+	#p4 {
+		position: absolute;
+		color: #000;
+		font-family: 'IBM Plex Sans', sans-serif;
+		font-size: 1.3rem;
+		padding-left: 3.8vw;
+		top: 70%;
+	}
+
+	#p5 {
+		position: absolute;
+		font-family: 'IBM Plex Sans', sans-serif;
+		font-size: 1rem;
+		padding-left: 3.8vw;
+		top: 75%;
+	}
+
+}
+
+footer {
+	text-align: center;
+	padding-bottom: 20px;
+}
+footer h2 {
+	font-size: 1.1em;
+	font-family: 'IBM Plex Sans', sans-serif;;
+}
+
+

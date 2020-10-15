@@ -1,0 +1,96 @@
+<!--No result page for when user clicks other tags other than user research-->
+<!DOCTYPE html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--Stylesheet-->
+	<link rel="stylesheet" href="css/articles.css">
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/filter.css">
+	<!--JS-->
+	<script src="js/javascript.js"></script>
+		
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+<!----------Font ------->
+
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		
+<!------x----Font ----x--->
+
+	<title>UX hub</title>
+</head>
+<body>
+
+ <!----------NAV BAR ------->
+ <nav>
+ <!---------burger ------->
+ <div class="burger">
+	<div class="line1"></div>
+	<div class="line2"></div>
+	<div class="line3"></div>
+	</div>
+
+<!---------burger ------->
+
+<!--------------NAV------->
+		
+<header class='header'>
+	<div class="logo">
+		<li><a href="index.html"><h1>UX</h1><h2>HUB</h2></a></li>
+	</div>
+	<div class="links">
+<input class="menu-btn" type="checkbox" id="menu-btn" />
+<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+	<li><a href="articles.html">Articles</a></li>
+	<li><a href="videos.html">Videos</a></li>
+	<li><a href="tools.html">Tools & Resources</a></li>
+	<li><a href="submit.html">Submit content</a></li>
+  </ul>
+</div>
+</header>
+
+</nav>
+
+<!------X-------NAV----X-->
+
+<!--------------------------Main article grid----------------------------------------->
+
+	<section class="article-grid">
+		<div class="card"> <h3>Filter Content</h3>
+		</div>
+
+		        <!--Start of filter system code-->
+				<div class="dropdown">
+					<!--Filter Content button-->
+				   <button class="filterDropBtn" onclick="filterBtn()"><p>Filter Content</p>
+					   <!--Dropdown arrow-->
+					  <img class="arrow_img" src="images/drop_down_arrow.svg"  alt="dropdown arrow">
+				  </button>
+				  
+		 <!--Main container holding tags-->
+		 <div id="filter">
+            <a href="noresult2.html"><button id="abTest" class="button" onclick="filterSelection(this.id)">A/B Testing</button></a>
+            <a href="noresult2.html"> <button id="wireframing" class="button button2" onclick="filterSelection(this.id)">Wireframe</button></a>
+            <a href="noresult2.html"><button id="userFlow" class="button button3" onclick="filterSelection(this.id)">User Flow</button></a>
+            <a href="noresult2.html"><button id="prototyping" class="button button4" onclick="filterSelection(this.id)">Prototyping</button></a>
+            <a href="noresult2.html"><button id="journeyMap" class="button button5" onclick="filterSelection(this.id)">Journey Map</button></a>
+            <a href="noresult2.html"><button id="userTesting" class="button button6" onclick="filterSelection(this.id)">User Testing</button></a>
+            <a href="research.html"><button id="userResearch" class="button button7" onclick="filterSelection(this.id)">User Research</button></a>
+            <a href="noresult2.html"><button id="pattern" class="button button8" onclick="filterSelection(this.id)">Browsing Pattern</button></a>
+            <a href="noresult2.html"><button id="usability" class="button button9" onclick="filterSelection(this.id)">Usability Test</button></a>
+            <a href="noresult2.html"><button id="collab" class="button button10" onclick="filterSelection(this.id)">Collaboration</button></a>
+        </div>
+    </div>
+    
+    <div class="none">
+        <h1>No results</h1>
+    </div>
+
+
+	</section>
+
+<!----------X---------------Main article grid------------------X---------------------->
+	

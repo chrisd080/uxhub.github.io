@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--Stylesheet-->
+	<link rel="stylesheet" href="css/submit.css">
+	<link rel="stylesheet" href="css/nav.css">
+		<!--Stylesheet-->
+		
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+<!----------Font ------->
+
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+		
+<!------x----Font ----x--->
+
+	<title>UX hub</title>
+</head>
+<body>
+
+ <!----------NAV BAR ------->
+ <nav>
+ <!---------burger ------->
+ <div class="burger">
+	<div class="line1"></div>
+	<div class="line2"></div>
+	<div class="line3"></div>
+	</div>
+
+<!---------burger ------->
+
+<!--------------NAV------->
+		
+<header class='header'>
+	<div class="logo">
+		<li><a href="index.html"><h1>UX</h1><h2>HUB</h2></a></li>
+	</div>
+	<div class="links">
+<input class="menu-btn" type="checkbox" id="menu-btn" />
+<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+	<li><a href="articles.html">Articles</a></li>
+	<li><a href="videos.html">Videos</a></li>
+	<li><a href="tools.html">Tools & Resources</a></li>
+	<li><a href="submit.html">Submit content</a></li>
+  </ul>
+</div>
+</header>
+
+</nav>
+
+
+
+<!-----X-----NAV BAR ---X---->	
+
+
+<div class="cards">
+	<div class="card-2"></div>
+<div class="parent">
+	
+	<div class="cardbig">
+		<div class="container">
+			
+			<form action="" id="myform" onsubmit = "return validate();">
+				<h3>Submit Content</h3> <br> <p>Have you written an article you’re proud of and want to share? <br>
+					Found a great video for learning journey mapping? <br>Submit it here!</p> <br><br>
+		  
+			  <label for="fname"><p>First Name</p></label>
+			  <input type="text" id="fname" name="firstname" placeholder="">
+		  
+			  <label for="lname"><p>Last Name</p></label>
+			  <input type="text" id="lname" name="lastname" placeholder="">
+
+			  <label for="title"><p>Title</p></label>
+			  <input type="text" id="title" name="title" placeholder="">
+		  
+			  <label for="Tags"><p>Please select one tag</p></label>
+			 
+			  <select id="Tags" name="tags">
+				<option value="">A/B testing</option>
+				<option value="">Agile</option>
+				<option value="">Blockframe</option>
+				<option value="">Browsing pattern</option>
+				<option value="">Customer Journey</option>
+				<option value="">Eye tracking</option>
+				<option value="">Information architecture</option>
+				<option value="">Iterative design</option>
+				<option value="">Micro-copy</option>
+				<option value="">Onboarding</option>
+				<option value="">Persona</option>
+				<option value="">Prototyping</option>
+				<option value="">Style systems</option>
+				<option value="">User flow</option>
+				<option value="">User testing</option>
+			  </select>
+		  
+			  <label for="subject"><p>Entry message:</p></label>
+			  <textarea id="subject" name="subject" placeholder="Write your article here" style="height:200px"></textarea>
+			  <form action="upload.php" method="post" enctype="multipart/form-data">
+				<p>Select a file to upload:</p>
+				<input type="file" name="fileToUpload" id="fileToUpload">
+			<br>
+			 <br> 
+			 <br>
+ 
+			  <a href="submit-done.html" class="btn">Submit</a><value="Submit"></value>
+			</form>
+		</form>
+		  </div>	
+		  <div class="card-2"></div>
+	</div>
+</div>
+	
+
+
+  </div>
+
+</body
+
+</html>
